@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:netflix_clone_byflutter/pages/comingsoon_page.dart';
 import 'package:netflix_clone_byflutter/pages/home_page.dart';
 
 import '../jsons/root_app_json.dart';
@@ -12,21 +12,15 @@ class RootApp extends StatefulWidget {
 }
 
 class _RootAppState extends State<RootApp> {
-  @override
   late int activeTab = 0;
-
+  @override
   Widget build(BuildContext context) {
     Widget getBody() {
       return IndexedStack(
         index: activeTab,
-        children: [
+        children: const [
          HomePage(),
-          Center(
-            child: Text(
-              'Comming soon',
-              style: TextStyle(fontSize: 20, color: Colors.white),
-            ),
-          ),
+         ComingSoonPage(),
           Center(
             child: Text(
               'Search',
@@ -45,7 +39,7 @@ class _RootAppState extends State<RootApp> {
     Widget getFooter() {
       return Container(
         height: 80,
-        decoration: BoxDecoration(color: Colors.black),
+        decoration: const BoxDecoration(color: Colors.black),
         child: Padding(
           padding: const EdgeInsets.only(left: 20, right: 20, top: 5),
           child: Row(
@@ -67,7 +61,7 @@ class _RootAppState extends State<RootApp> {
                         const SizedBox(height: 5),
                         Text(
                           items[index]['text'],
-                          style: TextStyle(color: Colors.white),
+                          style: const TextStyle(color: Colors.white),
                         )
                       ],
                     ),

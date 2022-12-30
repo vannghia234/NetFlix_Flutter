@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
                       //  banner image
                       Container(
                         height: 500,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: AssetImage(
@@ -67,10 +67,10 @@ class _HomePageState extends State<HomePage> {
                               'assets/images/title_img.webp',
                               width: 300,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 15,
                             ),
-                            Text(
+                            const Text(
                               'Exciting - Sci-Fi Drama - Sci-Fi Adventure',
                               style:
                                   TextStyle(fontSize: 13, color: Colors.white),
@@ -88,12 +88,12 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Column(
-                        children: [
+                        children: const [
                           Icon(
                             Icons.add,
                             color: Colors.white,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -105,13 +105,13 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                       Container(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                             right: 13, left: 8, bottom: 2, top: 2),
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(4)),
                         child: Row(
-                          children: [
+                          children: const [
                             Icon(
                               Icons.play_arrow,
                               color: Colors.black,
@@ -131,12 +131,12 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       Column(
-                        children: [
+                        children: const [
                           Icon(
                             Icons.info_outline,
                             color: Colors.white,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -149,7 +149,7 @@ class _HomePageState extends State<HomePage> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
 
@@ -157,8 +157,8 @@ class _HomePageState extends State<HomePage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 15),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15, right: 15),
                         child: Text(
                           'My List',
                           style: TextStyle(
@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 18),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       SingleChildScrollView(
@@ -177,7 +177,7 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                               children: List.generate(mylist.length, (index) {
                             return Container(
-                              margin: EdgeInsets.only(right: 8),
+                              margin: const EdgeInsets.only(right: 8),
                               width: 110,
                               height: 160,
                               decoration: BoxDecoration(
@@ -190,12 +190,12 @@ class _HomePageState extends State<HomePage> {
                           })),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       //Popular List
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 15),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15, right: 15),
                         child: Text(
                           'Popular on Netflix',
                           style: TextStyle(
@@ -204,7 +204,7 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 18),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       SingleChildScrollView(
@@ -229,12 +229,12 @@ class _HomePageState extends State<HomePage> {
                           })),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       // Trending Now
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 15),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15, right: 15),
                         child: Text(
                           'Trending Now',
                           style: TextStyle(
@@ -243,7 +243,7 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 18),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       SingleChildScrollView(
@@ -254,7 +254,7 @@ class _HomePageState extends State<HomePage> {
                               children:
                                   List.generate(trendingList.length, (index) {
                             return Container(
-                              margin: EdgeInsets.only(right: 8),
+                              margin: const EdgeInsets.only(right: 8),
                               width: 110,
                               height: 160,
                               decoration: BoxDecoration(
@@ -268,12 +268,12 @@ class _HomePageState extends State<HomePage> {
                           })),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       // Trending Now
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 15),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15, right: 15),
                         child: Text(
                           'Netflix Anime',
                           style: TextStyle(
@@ -282,7 +282,7 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 18),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       SingleChildScrollView(
@@ -293,7 +293,7 @@ class _HomePageState extends State<HomePage> {
                               children:
                                   List.generate(animeList.length, (index) {
                             return Container(
-                              margin: EdgeInsets.only(right: 8),
+                              margin: const EdgeInsets.only(right: 8),
                               width: 165,
                               height: 300,
                               decoration: BoxDecoration(
@@ -307,12 +307,12 @@ class _HomePageState extends State<HomePage> {
                           })),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30,
                       ),
                       // originalList
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15, right: 15),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 15, right: 15),
                         child: Text(
                           'Netflix Original',
                           style: TextStyle(
@@ -321,7 +321,7 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 18),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       SingleChildScrollView(
@@ -351,12 +351,13 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               width: size.width,
               child: SafeArea(
                 child: Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(left: 10),
@@ -370,7 +371,7 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.collections_bookmark,
                                   color: Colors.white,
                                   size: 35,
@@ -386,29 +387,28 @@ class _HomePageState extends State<HomePage> {
                           ],
                         )
                       ],
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Text(
+                        const Text(
                           'TV Show',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 15,
                               fontWeight: FontWeight.bold),
                         ),
-                        Text(
+                        const Text(
                           'Movies',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 15,
                               fontWeight: FontWeight.bold),
                         ),
-                        Row(children: [
+                        Row(children: const [
                           Text(
                             'Categories',
                             style: TextStyle(
