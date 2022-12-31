@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_byflutter/pages/comingsoon_page.dart';
+import 'package:netflix_clone_byflutter/pages/download_page.dart';
 import 'package:netflix_clone_byflutter/pages/home_page.dart';
+import 'package:netflix_clone_byflutter/pages/search_page.dart';
 
 import '../jsons/root_app_json.dart';
 
@@ -21,18 +23,8 @@ class _RootAppState extends State<RootApp> {
         children: const [
          HomePage(),
          ComingSoonPage(),
-          Center(
-            child: Text(
-              'Search',
-              style: TextStyle(fontSize: 20, color: Colors.white),
-            ),
-          ),
-          Center(
-            child: Text(
-              'Download',
-              style: TextStyle(fontSize: 20, color: Colors.white),
-            ),
-          )
+          SearchPage(),
+          DownloadPage()
         ],
       );
     }
